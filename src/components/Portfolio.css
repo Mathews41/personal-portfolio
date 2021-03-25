@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.main {
+  max-width: 100vw;
+  max-height: auto;
+  background: white;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper {
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-info {
+  width: 400px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-info > div {
+  margin-left: 24px;
+}
+.header-info > div > h1 {
+  font-family: "Inter";
+  font-weight: bolder;
+  margin: 0;
+}
+.header-info > div > h3 {
+  font-family: "Inter";
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.header-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid #62b4ff;
+}
+.front-end-projects {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.front-end-projects > h1 {
+  font-family: "Inter";
+  font-weight: bold;
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+}
+.front-end-projects > h1::before {
+  content: "";
+  width: 40px;
+  height: 5px;
+  margin: 0;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  background-color: #62b4ff;
+}
+/* .project-line {
+    width: 100%;
+    height: 2px;
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgb(197, 197, 197);
+} */
+.mapped-projects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 45px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #eff2f270;
+  border: 2px solid rgba(133, 133, 133, 0.075);
+}
+.project > h1 {
+  margin: 0px 0 2px 0;
+  font-family: "Inter";
+  font-weight: lighter;
+}
+.project > h3 {
+  margin-top: 10px;
+  color: #105596;
+  font-family: "Inter";
+  font-weight: lighter;
+}
+.mobile > h3 {
+  margin-top: 10px;
+  color: #105596;
+  font-family: "Inter";
+  font-weight: lighter;
+}
+.desktop > h3 {
+  margin-top: 10px;
+  color: #105596;
+  font-family: "Inter";
+  font-weight: lighter;
+}
+.project-header {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: "Inter";
+  font-weight: lighter;
+}
+.project > h5 {
+  margin: 10px 0 0 0;
+  color: #105596;
+  font-family: "Inter";
+  font-weight: lighter;
+}
+.project > h6 {
+  font-family: "Inter";
+  font-weight: lighter;
+  font-size: 12pt;
+  margin: 10px 0 0 0;
+}
+.project-mobile-img {
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  align-self: center;
+}
+.project-desktop-img {
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  align-self: center;
+}
+.project > a {
+  margin-top: 10px;
+  color: #62b4ff;
+}
+.about-me-container {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 45px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #eff2f270;
+  border: 2px solid rgba(133, 133, 133, 0.075);
+}
+.about-me-container > h1 {
+  font-family: "Inter";
+  font-weight: bold;
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+}
+.about-me-container > h1::before {
+  content: "";
+  width: 40px;
+  height: 5px;
+  margin: 0;
+  bottom: -1px;
+  position: absolute;
+  left: 0;
+  background-color: #62b4ff;
+}
+.about-me > p {
+  font-family: "Inter";
+  font-weight: lighter;
+}
+.contact {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.contact > h2 {
+  font-family: "Inter";
+  margin: 0 0 5px 0;
+  position: relative;
+}
+.contact > a {
+  margin-top: 1rem;
+  width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  color: #62b4ff;
+  border: none;
+
+  justify-content: center;
+  font-family: "Inter";
+  border: 1px solid #62b4ff;
+  font-size: 12pt;
+  background-color: #62b3ff1f;
+  margin-bottom: 1rem;
+}
+.contact > a:hover {
+  background-color: #62b3ff31;
+  border: 1px solid #549adb;
+  color: #549adb;
+  cursor: pointer;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 0 0;
+}
+.icon > h5 {
+  margin: 5px 0 0 5px;
+  padding-left: 5px;
+  font-weight: 400;
+}
+.contact > h2::before {
+  content: "";
+  width: 40px;
+  height: 4px;
+  margin: 0;
+  bottom: -1px;
+  position: absolute;
+  left: 0;
+  background-color: #62b4ff;
+}
+@media only screen and (min-width: 1000px) {
+  .main {
+    display: flex;
+    align-items: center;
+  }
+  .header-info {
+    padding-top: 30px;
+  }
+  .nav-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact {
+    width: 280px;
+    padding-top: 30px;
+  }
+  .front-end-projects {
+    width: 80%;
+  }
+  .mapped-projects {
+    width: 100%;
+  }
+  .project-mobile-img {
+    width: 200px;
+    height: auto;
+  }
+  .project-desktop-img {
+    width: 500px;
+    height: auto;
+  }
+  .desktop {
+    margin-left: 30px;
+  }
+  .image-container {
+    display: flex;
+  }
+  .about-me-container {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .project-desktop-img {
+    width: 750px;
+    height: auto;
+  }
+}
