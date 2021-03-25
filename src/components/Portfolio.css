@@ -153,6 +153,12 @@
   border-radius: 5px;
   align-self: center;
 }
+.project-rick-img {
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  align-self: center;
+}
 .project > a {
   margin-top: 10px;
   color: #62b4ff;
@@ -238,6 +244,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .icon {
   display: flex;
   flex-direction: row;
@@ -289,6 +296,9 @@
   .project-desktop-img {
     width: 500px;
     height: auto;
+  }
+  .project-rick-img {
+    width: 500px;
   }
   .desktop {
     margin-left: 30px;

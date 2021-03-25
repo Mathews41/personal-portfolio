@@ -133,7 +133,7 @@ export default class Portfolio extends Component {
               <div className="project">
                 <h1>Rick & Morty API</h1>
                 <h3>Desktop View</h3>
-                <img className="project-rick-img" src={rickApi} alt='desktop view' />
+                <img className="project-desktop-img" src={rickApi} alt='desktop view' />
                 <h5>Technologies: Javascript, React, Express, HTML, CSS</h5>
                 <h6>
                   A basic use of express calling to the Api and displaying a
