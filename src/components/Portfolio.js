@@ -7,7 +7,7 @@ import uniswapDesktop from "./images/Screen Shot 2020-12-17 at 12.50.59 PM.png";
 import openseaMobile from "./images/Screen Shot 2021-03-22 at 12.11.13 PM.png";
 import openseaDesktop from "./images/Screen Shot 2021-03-22 at 10.35.19 AM.png";
 import rickApi from "./images/Screen Shot 2021-03-23 at 9.40.19 PM.png";
-import resume from './images/Mark Mathews.pdf'
+import resume from "./images/Mark Mathews.pdf";
 
 export default class Portfolio extends Component {
   constructor() {
@@ -65,6 +65,7 @@ export default class Portfolio extends Component {
               <img
                 className="project-mobile-img"
                 src={project.views[0].image}
+                alt="mobile view"
               />
             </div>
             <div className="desktop">
@@ -72,6 +73,7 @@ export default class Portfolio extends Component {
               <img
                 className="project-desktop-img"
                 src={project.views[1].image}
+                alt="desktop view"
               />
             </div>
           </div>
@@ -89,7 +91,8 @@ export default class Portfolio extends Component {
           <div className="front-end-projects">
             <div className="nav-info">
               <div className="header-info">
-                <img className="header-img" src={personalImg} />
+                <img className="header-img" src={personalImg} alt='personal image' />
+
                 <div>
                   <h1>Mark Mathews</h1>
                   <h3>Software Engineer</h3>
@@ -117,7 +120,9 @@ export default class Portfolio extends Component {
                     <h5>www.linkedin.com/in/markmathews41</h5>
                   </div>
                 </div>
-                <a  href={resume}target="blank_">View Full Resume</a>
+                <a href={resume} target="blank_">
+                  View Full Resume
+                </a>
               </div>
             </div>
 
@@ -128,7 +133,7 @@ export default class Portfolio extends Component {
               <div className="project">
                 <h1>Rick & Morty API</h1>
                 <h3>Desktop View</h3>
-                <img className="project-rick-img" src={rickApi} />
+                <img className="project-rick-img" src={rickApi} alt='desktop view' />
                 <h5>Technologies: Javascript, React, Express, HTML, CSS</h5>
                 <h6>
                   A basic use of express calling to the Api and displaying a
