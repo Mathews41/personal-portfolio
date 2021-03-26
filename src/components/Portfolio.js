@@ -100,8 +100,12 @@ export default class Portfolio extends Component {
           <h5>Technologies: {project.technologies}</h5>
 
           <h6>{project.description}</h6>
-          <a href={project.originalLink}>View Original</a>
-          <a href={project.githubLink}>View On Github</a>
+          <a href={project.originalLink} target="blank_">
+            View Original
+          </a>
+          <a href={project.githubLink} target="blank_">
+            View On Github
+          </a>
         </div>
       );
     });
@@ -128,7 +132,9 @@ export default class Portfolio extends Component {
             </div>
           </div>
           <h6>{project.description}</h6>
-          <a href={project.figmaLink}>View Full Design</a>
+          <a href={project.figmaLink} target="blank_">
+            View Full Design
+          </a>
         </div>
       );
     });
@@ -161,14 +167,26 @@ export default class Portfolio extends Component {
                       href="https://github.com/Mathews41"
                       icon="github"
                     />
-                    <h5>https://github.com/Mathews41</h5>
+                    <a
+                      className="social-link"
+                      href="https://github.com/Mathews41"
+                      target="blank_"
+                    >
+                      github.com/Mathews41
+                    </a>
                   </div>
                   <div className="icon">
                     <FeatherIcon
                       href="www.linkedin.com/in/markmathews41"
                       icon="linkedin"
                     />
-                    <h5>www.linkedin.com/in/markmathews41</h5>
+                    <a
+                      className="social-link"
+                      href="https://www.linkedin.com/in/markmathews41/"
+                      target="blank_"
+                    >
+                      linkedin.com/in/markmathews41/
+                    </a>
                   </div>
                 </div>
                 <a href={resume} target="blank_">
@@ -194,7 +212,10 @@ export default class Portfolio extends Component {
                   A basic use of express calling to the Api and displaying a
                   list of characters.
                 </h6>
-                <a href="https://github.com/Mathews41/Rick-Morty-API">
+                <a
+                  href="https://github.com/Mathews41/Rick-Morty-API"
+                  target="blank_"
+                >
                   View Github Respository
                 </a>
               </div>
@@ -202,9 +223,7 @@ export default class Portfolio extends Component {
           </div>
           <div className="figma">
             <h1>Figma Designs</h1>
-            <div className="mapped-projects">
-              {mappedDesigns}
-            </div>
+            <div className="mapped-projects">{mappedDesigns}</div>
           </div>
           <div className="about-me-container">
             <h1>About Me</h1>

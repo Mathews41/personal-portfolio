@@ -242,6 +242,10 @@
   align-items: flex-start;
   padding: 10px;
 }
+.social-link {
+  color: #62b4ff;
+  margin-left: 10px;
+}
 .contact > h2 {
   font-family: "Inter";
   margin: 0 0 5px 0;
