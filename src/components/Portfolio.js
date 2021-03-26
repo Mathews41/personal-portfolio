@@ -62,12 +62,12 @@ export default class Portfolio extends Component {
             "https://www.figma.com/file/epOdzwstsy40WpZd5vCLqL/Rusty-Speed?node-id=0%3A1",
           views: [
             {
-              title: "Single Page",
-              image: rustySpeedSingle,
-            },
-            {
               title: "All Pages",
               image: rustySpeedAll,
+            },
+            {
+              title: "Single Page",
+              image: rustySpeedSingle,
             },
           ],
         },
