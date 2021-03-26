@@ -7,6 +7,8 @@ import uniswapDesktop from "./images/Screen Shot 2020-12-17 at 12.50.59 PM.png";
 import openseaMobile from "./images/Screen Shot 2021-03-22 at 12.11.13 PM.png";
 import openseaDesktop from "./images/Screen Shot 2021-03-22 at 10.35.19 AM.png";
 import rickApi from "./images/Screen Shot 2021-03-23 at 9.40.19 PM.png";
+import rustySpeedSingle from "./images/Screen Shot 2021-03-26 at 9.45.14 AM.png";
+import rustySpeedAll from "./images/Screen Shot 2021-03-26 at 9.44.00 AM.png";
 import resume from "./images/Mark Mathews.pdf";
 
 export default class Portfolio extends Component {
@@ -52,6 +54,24 @@ export default class Portfolio extends Component {
           ],
         },
       ],
+      designs: [
+        {
+          title: "Rusty Speed",
+          description: "A personal car project in the process of being built",
+          figmaLink:
+            "https://www.figma.com/file/epOdzwstsy40WpZd5vCLqL/Rusty-Speed?node-id=0%3A1",
+          views: [
+            {
+              title: "Single Page",
+              image: rustySpeedSingle,
+            },
+            {
+              title: "All Pages",
+              image: rustySpeedAll,
+            },
+          ],
+        },
+      ],
     };
   }
   render() {
@@ -85,13 +105,44 @@ export default class Portfolio extends Component {
         </div>
       );
     });
+    let mappedDesigns = this.state.designs.map((project) => {
+      return (
+        <div className="project">
+          <h1>{project.title}</h1>
+          <div className="image-container">
+            <div className="mobile">
+              <h3>Single Page View</h3>
+              <img
+                className="figma-single-img"
+                src={project.views[0].image}
+                alt="single page"
+              />
+            </div>
+            <div className="desktop">
+              <h3>All Pages View</h3>
+              <img
+                className="figma-all-img"
+                src={project.views[1].image}
+                alt="all pages"
+              />
+            </div>
+          </div>
+          <h6>{project.description}</h6>
+          <a href={project.figmaLink}>View Full Design</a>
+        </div>
+      );
+    });
     return (
       <div className="main">
         <div className="wrapper">
           <div className="front-end-projects">
             <div className="nav-info">
               <div className="header-info">
-                <img className="header-img" src={personalImg} alt='personal image' />
+                <img
+                  className="header-img"
+                  src={personalImg}
+                  alt="personal image"
+                />
 
                 <div>
                   <h1>Mark Mathews</h1>
@@ -133,7 +184,11 @@ export default class Portfolio extends Component {
               <div className="project">
                 <h1>Rick & Morty API</h1>
                 <h3>Desktop View</h3>
-                <img className="project-desktop-img" src={rickApi} alt='desktop view' />
+                <img
+                  className="project-rick-img"
+                  src={rickApi}
+                  alt="desktop view"
+                />
                 <h5>Technologies: Javascript, React, Express, HTML, CSS</h5>
                 <h6>
                   A basic use of express calling to the Api and displaying a
@@ -143,6 +198,12 @@ export default class Portfolio extends Component {
                   View Github Respository
                 </a>
               </div>
+            </div>
+          </div>
+          <div className="figma">
+            <h1>Figma Designs</h1>
+            <div className="mapped-projects">
+              {mappedDesigns}
             </div>
           </div>
           <div className="about-me-container">
