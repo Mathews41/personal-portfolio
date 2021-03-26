@@ -9,6 +9,8 @@ import openseaDesktop from "./images/Screen Shot 2021-03-22 at 10.35.19 AM.png";
 import rickApi from "./images/Screen Shot 2021-03-23 at 9.40.19 PM.png";
 import rustySpeedSingle from "./images/Screen Shot 2021-03-26 at 9.45.14 AM.png";
 import rustySpeedAll from "./images/Screen Shot 2021-03-26 at 9.44.00 AM.png";
+import triggerPickerAll from "./images/Screen Shot 2021-03-26 at 11.25.48 AM.png";
+import triggerPickerSingle from "./images/Screen Shot 2021-03-26 at 11.38.00 AM.png";
 import resume from "./images/Mark Mathews.pdf";
 
 export default class Portfolio extends Component {
@@ -68,6 +70,22 @@ export default class Portfolio extends Component {
             {
               title: "Single Page",
               image: rustySpeedSingle,
+            },
+          ],
+        },
+        {
+          title: "Trigger Picker",
+          description: "Gun Building Website built in mobile view",
+          figmaLink:
+            "https://www.figma.com/file/mwTltirAuppa4O4uYcjuS9/Untitled?node-id=0%3A1",
+          views: [
+            {
+              title: "Single Page",
+              image: triggerPickerSingle,
+            },
+            {
+              title: "All Pages",
+              image: triggerPickerAll,
             },
           ],
         },
@@ -229,11 +247,11 @@ export default class Portfolio extends Component {
             <h1>About Me</h1>
             <div className="about-me">
               <p>
-                I've been fueled by my passion for understanding the nuances of
-                making and building functional software. I consider myself a
+                I've been fueled by my <b>passion</b> for understanding the nuances of
+                making and building <b>functional</b> software. I consider myself a
                 ‘forever student,’ eager to both build on academic foundations,
                 but even more importantly by staying in tune with the latest
-                software releases through through my addiction to stack overflow
+                software releases through through my <b>addiction</b> to stack overflow
                 and github.
               </p>
               <p>
@@ -241,7 +259,7 @@ export default class Portfolio extends Component {
                 library.
               </p>
               <p>
-                I've developed a strong understanding of React’s most essential
+                I've developed a strong understanding of React’s most <b>essential </b>
                 concepts: JSX, components, and storing information via props or
                 Redux. I can combine technologies in React’s modular programming
                 style.
