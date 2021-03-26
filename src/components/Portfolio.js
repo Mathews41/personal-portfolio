@@ -225,7 +225,7 @@ export default class Portfolio extends Component {
                   src={rickApi}
                   alt="desktop view"
                 />
-                <h5>Technologies: Javascript, React, Express, HTML, CSS</h5>
+                <h5>Technologies: Javascript, React, Axios, HTML, CSS</h5>
                 <h6>
                   A basic use of express calling to the Api and displaying a
                   list of characters.
